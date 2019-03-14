@@ -9,7 +9,7 @@ install:
 before_script: cd tests
 script:
   - pip freeze
-  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then pytest --runintegration --cov; fi'
+  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then pytest --runintegration --cov=flair tests/; fi'
   - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then pytest --cov; fi'
 after_success:
   - coveralls
