@@ -12,7 +12,7 @@ setup(
     packages=find_packages(exclude='test'),  # same as name
     license='MIT',
     install_requires=[
-        'torch>=1.0.0',
+        'torch==0.4.1',
         'gensim>=3.4.0',
         'tqdm>=4.26.0',
         'segtok>=1.5.7',
